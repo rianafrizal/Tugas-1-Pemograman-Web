@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan Menu Utama : Aplikasi Manajemen Pegawai</title>
+    <!-- style -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header Menu Utama -->
+    <header>Aplikasi Manajemen Pegawai</header>
+
+    <!-- container -->
+    <div class="container">
+      <!-- sidebar -->
+      <aside>
+        <ul class="menu">
+          <li><a href="menu.html">Dasboard</a></li>
+          <li><a href="pegawai.html">Data Pegawai</a></li>
+          <li><a href="jabatan.html">Data Jabatan</a></li>
+          <li><a href="">Keluar</a></li>
+        </ul>
+      </aside>
+      <!-- content -->
+      <section class="main">
+        <h2 class="judul">Tambah Data Pegawai</h2>
+        <form action="" method="post">
+          <div class="form-group">
+            <label for="foto">Foto</label>
+            <div class class="input">
+              <input type="file" id="Foto" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="nama">Nama</label>
+            <div class="input">
+              <input type="text" id="nama" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="jk">Jenis Kelamin</label>
+            <input type="radio" id="jk" name="jk" value="P" /> Pria
+            <input type="radio" id="jk" name="jk" value="W" /> Wanita
+          </div>
+          <div class="form-group">
+            <label for="nama">Tanggal</label>
+            <div class="input">
+              <input type="date" id="Tanggal" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="nama">jabatan</label>
+            <div class="input">
+              <select name="jabatan" id="jabatan">
+                <option value="" selected>Pilih</option>
+                <option value="Rektor" selected>Rektor</option>
+                <option value="WR" selected>Wakil Rektor</option>
+                <option value="DK" selected>Dekan</option>
+                <option value="WD" selected>Wakil Dekan</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="submit" value="Simpan" class="tombol Simpan" />
+            <input type="reset" value="Batal" class="tombol reset" />
+          </div>
+        </form>
+      </section>
+      <!-- footer -->
+    </div>
+    <footer>copyright &copy; Basecamp Informatika</footer>
+  </body>
+</html>
